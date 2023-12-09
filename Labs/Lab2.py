@@ -45,8 +45,8 @@ db = client.smelkin
 collection = db.institute
 
 # Значения для запроса
-semestr_for_query = 1 # 1 or 2
-year_for_query = 2023 # 2023 or 2024
+semestr_for_query = 1 # 1 или 2
+year_for_query = 2023 # 2023 или 2024
 
 def get_dates(semestr,year):
     if semestr == 1:
@@ -74,7 +74,7 @@ lec_ids=[]
 for i in range(len(lec_id[0])):
         lec_ids.append((lec_id[0][i]['l.iid']))
 print(lec_ids)
-
+#TODO:объединение в один запрос без цикла ниже
 
 #вывод дисциплины и слушателей в периоде
 array = []
